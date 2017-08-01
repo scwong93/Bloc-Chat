@@ -1,2 +1,4 @@
-<h1>Bloc Chat</h1>
-<div class="rooms-list" ng-repeat="room in home.rooms"></div>
+<div class="nav">
+  <h1>Bloc Chat</h1>
+  <span class="new-room-button" ng-click="home.room.add()"></span>
+  <div class="rooms-list" ng-repeat="room in home.rooms"></div>
