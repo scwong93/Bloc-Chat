@@ -1,5 +1,5 @@
 <div class="main-nav">
   <h1>Bloc Chat</h1>
-  <span class="new-room-button" ng-click="home.Room.add()"></span>
+  <button class="new-room-button" type="button" ng-click="room.newRoom()">New Room</button>
   <div class="rooms-list" ng-repeat="room in rooms">{{ room.name }}</div>
 </div>
