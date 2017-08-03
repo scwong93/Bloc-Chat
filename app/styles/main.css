@@ -8,7 +8,8 @@
   padding-left: 20px;
 }
 
-h1 {
+
+h2 {
   display: inline-block;
 }
 
@@ -21,6 +22,10 @@ h1 {
 }
 
 .new-room-button:hover {
+  cursor: pointer;
+}
+
+.rooms-list:hover {
   cursor: pointer;
 }
 
