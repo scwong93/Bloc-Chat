@@ -20,6 +20,10 @@ h1 {
   border: 1px solid black;
 }
 
+.new-room-button:hover {
+  cursor: pointer;
+}
+
 .rooms-list {
   margin-top: 5px;
   margin-bottom: 15px;
