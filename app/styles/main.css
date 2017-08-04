@@ -35,3 +35,32 @@ h2 {
   margin-left: 10px;
   color: gray;
 }
+
+.chat-box {
+  padding-left: 280px;
+}
+
+.room-name {
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.message-info {
+  background-color: lightgray;
+  padding: 5px 0 5px 20px;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-weight: bold;
+  float: left;
+}
+
+.timestamp {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.username .timestamp {
+  display: inline-block;
+}

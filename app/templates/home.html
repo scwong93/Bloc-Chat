@@ -4,11 +4,11 @@
   <div class="rooms-list" ng-repeat="room in home.rooms" ng-click="home.setCurrentRoom(room)">{{ room.name }}</div>
 </div>
 
-<div class="chat-box" style="padding-left: 300px;">
+<div class="chat-box">
   <h3 class="room-name">{{ home.currentRoom.name }}</h3>
   <div class="message-info" ng-repeat="message in home.messages">
     <div class="username">{{ message.username }}</div>
-    <div class="message-content">{{ message.content }}</div>
     <div class="timestamp">{{ message.timestamp }}</div>
+    <div class="message-content">{{ message.content }}</div>
   </div>
 </div>
