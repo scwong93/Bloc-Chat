@@ -19,7 +19,14 @@
         chat.currentRoom = room;
         chat.messages = Message.getByRoomId(chat.currentRoom.$id);
       }
+
+      chat.sendMessage = function() {
+        chat.newMessage.roomId = chat.currentRoom.$id;
+        chat.newMessage.username = chat.currentUser;
+        Message.send(chat.newMessage);
+      }
     }
+
 
 
 
