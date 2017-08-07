@@ -64,3 +64,16 @@ h2 {
 .username .timestamp {
   display: inline-block;
 }
+
+.message-box {
+  bottom: 0px;
+  left: 286px;
+  width: 80%;
+  position: fixed;
+}
+
+.send-button {
+  bottom: 0px;
+  right: 0px;
+  position: fixed;
+}

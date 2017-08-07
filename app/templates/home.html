@@ -8,7 +8,12 @@
   <h3 class="room-name">{{ home.currentRoom.name }}</h3>
   <div class="message-info" ng-repeat="message in home.messages">
     <div class="username">{{ message.username }}</div>
-    <div class="timestamp">{{ message.timestamp }}</div>
+    <div class="timestamp">{{ message.timestamp | date : "h:mm a"}}</div>
     <div class="message-content">{{ message.content }}</div>
   </div>
+  <div class="send-message" ng-hide="!chat.currentRoom">
+    <form ng-submit="home.sendMessage()">
+      <input class="message-box" type="text" ng-model="home.newMessage">
+      <button class="send-button" type="button" ng-click="home.sendMessage()">Send</button>
+    </form>
 </div>

@@ -21,9 +21,12 @@
       }
 
       chat.sendMessage = function() {
-        chat.newMessage.roomId = chat.currentRoom.$id;
-        chat.newMessage.username = chat.currentUser;
-        Message.send(chat.newMessage);
+        Message.send({
+          content: chat.newMessage,
+          roomId: chat.currentRoom.$id,
+          username: chat.currentUser
+        });
+        chat.newMessage = null;
       }
     }
 

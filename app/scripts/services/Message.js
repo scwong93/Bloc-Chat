@@ -2,7 +2,7 @@
   function Message($firebaseArray) {
     var Message = {};
     var ref = firebase.database().ref().child("messages");
-    var Messages = $firebaseArray(ref);
+    var messages = $firebaseArray(ref);
     Message.all = messages;
 
     Message.getByRoomId = function(roomId) {
@@ -10,8 +10,8 @@
     };
 
     Message.send = function(newMessage) {
-      messages.$add(newMessage);
       newMessage.timestamp = firebase.database.ServerValue.TIMESTAMP;
+      messages.$add(newMessage);
     };
 
     return Message;
