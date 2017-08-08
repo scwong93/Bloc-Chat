@@ -11,7 +11,7 @@
     <div class="timestamp">{{ message.timestamp | date : "h:mm a"}}</div>
     <div class="message-content">{{ message.content }}</div>
   </div>
-  <div class="send-message" ng-hide="!chat.currentRoom">
+  <div class="send-message" ng-hide="!home.currentRoom">
     <form ng-submit="home.sendMessage()">
       <input class="message-box" type="text" ng-model="home.newMessage">
       <button class="send-button" type="button" ng-click="home.sendMessage()">Send</button>
